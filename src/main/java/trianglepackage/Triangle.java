@@ -115,7 +115,7 @@ public class Triangle {
      * be equilateral and right-angled.
      * @return true if two sides have equal length
      */
-    public boolean isIsosceles()
+    private boolean isIsosceles()
     {
         if (side1 == side2 || side2 == side3 || side1 == side3)
         {
@@ -128,7 +128,7 @@ public class Triangle {
      * Checks if the triangle is equilateral.
      * @return true if all three sides have equal length.
      */
-    public boolean isEquilateral()
+    private boolean isEquilateral()
     {
         if (side1 == side3)
         {
@@ -143,7 +143,7 @@ public class Triangle {
      * also be isosceles.
      * @return true if one angle is a right angle, otherwise false.
      */
-    public boolean isRightAngled()
+    private boolean isRightAngled()
     {
         int[] sides = new int[] { side1, side2, side3 };
 
@@ -155,7 +155,7 @@ public class Triangle {
      * Checks if the triangle is scalene.
      * @return true if all sides different lengths, no right angles.
      */
-    public boolean isScalene()
+    private boolean isScalene()
     {
         if (side1 != side2 && side1 != side3 && side2 != side3)
         {
@@ -170,7 +170,7 @@ public class Triangle {
      * valid triangle.
      * @return true if the given side lenghts do not form a triangle.
      */
-    public boolean isImpossible()
+    private boolean isImpossible()
     {
         if (side1 <= 0 || side2 <= 0 || side3 <= 0)
         {
